@@ -1,0 +1,147 @@
+/*NORMALIZE*/
+@import './misc/normalize';
+/*VARIABLES*/
+@import './misc/variables';
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: $main-color;
+    height: 100vh;
+
+
+    .card {
+        background-color: $card-color;
+        margin: 2% auto;
+        width: 20em;
+        height: fit-content;
+        border-radius: .5em;
+        padding: 1.5em;
+
+        .image {
+            background-image: url(/images/image-equilibrium.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: .5em;
+            &:hover .view{
+                opacity: .5;
+                cursor: pointer;
+            }
+            .view{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $secondary-color;
+                height: 300px;
+                width: 271px;
+                border-radius: .5em;
+                opacity: 0;
+
+            }
+
+        }
+
+        .info {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .title {
+                color: $white;
+                font-weight: 600;
+                font-size: 1.3em;
+
+                &:hover {
+                    color: $secondary-color;
+                    cursor: pointer;
+                }
+            }
+
+            .paragraph {
+                font-family: 'Outfit', sans-serif;
+                font-size: $paragraph;
+                font-weight: 300;
+                color: $primary-color;
+                font-size: 1em;
+                width: 100%;
+            }
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+
+            .ethereum {
+                display: flex;
+
+
+                img {
+                    padding-right: .5rem;
+                }
+
+                .eth {
+                    color: $secondary-color;
+                    font-weight: 600;
+                }
+            }
+
+            .clock {
+                display: flex;
+
+                img {
+                    padding-right: .5rem;
+                }
+
+                .days {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .division {
+        margin: auto;
+        width: 90%;
+        border-color: $primary-color;
+        background-color: $primary-color;
+    }
+
+    .creation {
+        display: flex;
+        align-items: center;
+        padding-top: 1em;
+
+
+
+        img {
+            border: 2px solid $white;
+            border-radius: 50%;
+            width: 50px;
+        }
+
+        p {
+            color: $white;
+            padding-left: 1rem;
+
+            &:hover {
+                color: $secondary-color;
+                cursor: pointer;
+            }
+
+            span {
+                color: $primary-color;
+            }
+
+        }
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}

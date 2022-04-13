@@ -1,0 +1,100 @@
+/*NORMALIZE*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*VARIABLES*/
+/*COLORS*/
+/*FONTS*/
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #0d192b;
+  height: 100vh; }
+  body .card {
+    background-color: #14253d;
+    margin: 2% auto;
+    width: 20em;
+    height: fit-content;
+    border-radius: .5em;
+    padding: 1.5em; }
+    body .card .image {
+      background-image: url(/images/image-equilibrium.jpg);
+      background-size: cover;
+      background-position: center;
+      border-radius: .5em; }
+      body .card .image:hover .view {
+        opacity: .5;
+        cursor: pointer; }
+      body .card .image .view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #00fff7;
+        height: 300px;
+        width: 271px;
+        border-radius: .5em;
+        opacity: 0; }
+    body .card .info {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      body .card .info .title {
+        color: white;
+        font-weight: 600;
+        font-size: 1.3em; }
+        body .card .info .title:hover {
+          color: #00fff7;
+          cursor: pointer; }
+      body .card .info .paragraph {
+        font-family: 'Outfit', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: #8bacda;
+        font-size: 1em;
+        width: 100%; }
+    body .card .price {
+      display: flex;
+      justify-content: space-between; }
+      body .card .price .ethereum {
+        display: flex; }
+        body .card .price .ethereum img {
+          padding-right: .5rem; }
+        body .card .price .ethereum .eth {
+          color: #00fff7;
+          font-weight: 600; }
+      body .card .price .clock {
+        display: flex; }
+        body .card .price .clock img {
+          padding-right: .5rem; }
+        body .card .price .clock .days {
+          color: #8bacda; }
+  body .division {
+    margin: auto;
+    width: 90%;
+    border-color: #8bacda;
+    background-color: #8bacda; }
+  body .creation {
+    display: flex;
+    align-items: center;
+    padding-top: 1em; }
+    body .creation img {
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 50px; }
+    body .creation p {
+      color: white;
+      padding-left: 1rem; }
+      body .creation p:hover {
+        color: #00fff7;
+        cursor: pointer; }
+      body .creation p span {
+        color: #8bacda; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+  .attribution a {
+    color: #3e52a3; }
