@@ -20,7 +20,7 @@ body {
     border-radius: .5em;
     padding: 1.5em; }
     body .card .image {
-      background-image: url(./images/image-equilibrium.jpg);
+      background-image: url(../../images/image-equilibrium.jpg);
       background-size: cover;
       background-position: center;
       border-radius: .5em; }
